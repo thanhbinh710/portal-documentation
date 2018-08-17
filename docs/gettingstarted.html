@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Getting Started · Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="![acnapi](/img/logo.png)"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Getting Started · Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://your-docusaurus-test-site.com/index.html"/><meta property="og:description" content="![acnapi](/img/logo.png)"/><meta property="og:image" content="https://your-docusaurus-test-site.com/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://your-docusaurus-test-site.com/img/docusaurus.png"/><link rel="shortcut icon" href="/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/acnapi.png" alt="Documentation"/><h2 class="headerTitleWithLogo">Documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/docs/gettingstarted.html" target="_self">Getting Started</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Gettting Started</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Gettting Started</h3><ul><li class="navListItem navListItemActive"><a class="navItem" href="/docs/gettingstarted.html">Getting Started</a></li><li class="navListItem"><a class="navItem" href="/docs/demo.html">Demo Guide</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Developer Features</h3><ul><li class="navListItem"><a class="navItem" href="/docs/createapp.html">Create app</a></li><li class="navListItem"><a class="navItem" href="/docs/subscribe.html">Subscribe Collections</a></li><li class="navListItem"><a class="navItem" href="/docs/useapi.html">Use API Collection</a></li><li class="navListItem"><a class="navItem" href="/docs/database.html">Database</a></li><li class="navListItem"><a class="navItem" href="/docs/editapp.html">Edit Settings</a></li><li class="navListItem"><a class="navItem" href="/docs/requestaccess.html">Request Access</a></li><li class="navListItem"><a class="navItem" href="/docs/deleteapp.html">Delete App</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Publisher Features</h3><ul><li class="navListItem"><a class="navItem" href="/docs/createvault.html">Create Vault</a></li><li class="navListItem"><a class="navItem" href="/docs/editvault.html">Edit Vault</a></li><li class="navListItem"><a class="navItem" href="/docs/deletevault.html">Delete Vault</a></li><li class="navListItem"><a class="navItem" href="/docs/createapi.html">Upload API</a></li><li class="navListItem"><a class="navItem" href="/docs/deleteapi.html">Delete API</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Architecture</h3><ul><li class="navListItem"><a class="navItem" href="/docs/architecture.html">Portal Architecture</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Getting Started</h1></header><article><div><span><p><img src="/img/logo.png" alt="acnapi"></p>
+<p><strong>acnapi Portal</strong> aims at creating reusable building blocks as APIs for easy repurposing cross-industry, enabling you to deliver value through SaaS models.</p>
+<h2><a class="anchor" aria-hidden="true" id="what-is-it-used-for"></a><a href="#what-is-it-used-for" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>What is it used for​?</h2>
+<p><strong>1. ASSETS CREATION​</strong></p>
+<ul>
+<li><p>Reusable building blocks in APIs and templates​</p></li>
+<li><p>Multi-tenancy​</p></li>
+<li><p>Full-stack automation + DevOps​</p></li>
+<li><p>Governance enforcement​</p></li>
+</ul>
+<p><strong>2. EXPERIMENTATION</strong></p>
+<ul>
+<li><p>Assembly approach enabling rapid prototyping and MVP/pilot​</p></li>
+<li><p>Built-in analytics enabling measure, learn and iterate​</p></li>
+<li><p>Internal and external (startups) building blocks for co-innovation​</p></li>
+</ul>
+<p><strong>3. PRODUCTION</strong></p>
+<ul>
+<li><p>Cloud-first architecture fully leveraging public clouds​</p></li>
+<li><p>Cloud agnostics (AWS, GCP, Azure)​</p></li>
+<li><p>API Analytics​</p></li>
+<li><p>Security​</p></li>
+<li><p>Monitoring and automated functional testing​</p></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="how-to-get-access-to-acnapi-portal"></a><a href="#how-to-get-access-to-acnapi-portal" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How to get access to acnapi Portal?</h2>
+<p>You can register for an account at <a href="https://portal.acnapi.io/">acnapi Portal</a></p>
+<p><img src="/img/register.gif" alt="register_instruction"></p>
+<h2><a class="anchor" aria-hidden="true" id="demo-guide"></a><a href="#demo-guide" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Demo guide</h2>
+<p>Please refer to <a href="/docs/demo.html">Demo Guide</a> for a quick demonstration of Portal's core capabilities.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-next button" href="/docs/demo.html">Demo Guide →</a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#what-is-it-used-for">What is it used for​?</a></li><li><a href="#how-to-get-access-to-acnapi-portal">How to get access to acnapi Portal?</a></li><li><a href="#demo-guide">Demo guide</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"></a><div><h5>Links</h5><a href="https://portal.acnapi.io/">acnapi Developer Portal</a><a href="https://catalogue-dev.acnapi.io/">API Catalog</a></div><div><h5>Community</h5><a href="https://portal.acnapi.io/">Add your API</a></div><div><h5>Company</h5><a href="https://beta.acnapi.io/">About us</a></div></section><section class="copyright">Copyright © ACNAPI 2018. All Rights Reserved</section></footer></div></body></html>
